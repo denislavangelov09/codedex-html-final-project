@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>John's Restaurant</title>
+		<style>
+			img {
+				max-width: 200px;
+				height: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<img
+				src="https://media-cdn.tripadvisor.com/media/photo-s/04/71/c0/fe/john-s-restaurant-sarnia.jpg"
+				alt="John's Restaurant"
+				id="header-img"
+			/>
+			<h1>John's Restaurant</h1>
+			<nav>
+				<h2><a href="#menu">Menu</a></h2>
+				<h2><a href="#order-form">Order Form</a></h2>
+			</nav>
+		</header>
+		<main>
+			<section id="menu">
+				<h2>Menu</h2>
+				<article>
+					<img
+						src="https://www.cookingclassy.com/wp-content/uploads/2023/08/hamburgers-20.jpg"
+						alt="hamburger"
+					/>
+					<h3>Hamburger</h3>
+					<p>
+						The classic hamburger, made with a juicy beef patty, crisp lettuce,
+						fresh tomato, and a toasted bun. <i>Price: $8.99</i>
+					</p>
+				</article>
+				<article>
+					<img
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTun8RtUzFNaOCtOAMjE-k41XIfr5zN38PuxA&s"
+						alt="cheeseburger"
+					/>
+					<h3>Cheeseburger</h3>
+					<p>
+						A delicious cheeseburger with a melty slice of cheddar cheese,
+						crispy lettuce, fresh tomato, and a toasted sesame seed bun.
+						<i>Price: $9.99</i>
+					</p>
+				</article>
+				<article>
+					<img
+						src="https://cookieandkate.com/images/2021/07/classic-margherita-pizza.jpg"
+						alt="margherita pizza"
+					/>
+					<h3>Margherita Pizza</h3>
+					<p>
+						A classic Margherita pizza topped with fresh mozzarella, ripe
+						tomatoes, basil leaves, and a drizzle of olive oil on a crispy thin
+						crust. <i>Price: $12.99</i>
+					</p>
+				</article>
+			</section>
+
+			<section>
+				<h2>Place Your order</h2>
+				<form id="order-form">
+					<label for="order-number">Order Number:</label>
+					<input type="number" name="order-number" id="order-number" min="0" />
+					<p>Add-ons:</p>
+					<input type="checkbox" name="sides" id="add-burger" value="burger" />
+					<label for="add-burger">Water</label>
+					<input type="checkbox" name="sides" id="add-pizza" value="pizza" />
+					<label for="add-pizza">Coca Cola</label>
+					<label for="comments">Additional Comments:</label>
+					<textarea name="comments" id="comments"></textarea>
+					<button type="submit">Go to Checkout</button>
+				</form>
+			</section>
+		</main>
+		<footer>
+			<p>Made with love by @denislav09</p>
+		</footer>
+	</body>
+</html>
